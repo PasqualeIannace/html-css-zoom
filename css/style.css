@@ -4,10 +4,17 @@
     margin: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+/* TAG */
+
 main {
     margin-top: 40px;
     height: calc(100vh - 125px);
     overflow: auto;
+    background: black;
 }
 
 header {
@@ -20,12 +27,25 @@ img {
 }
 
 footer {
+    display: flex;
     position: fixed;
+    justify-content: space-between;
     bottom: 0;
     z-index: 1;
     width: 100%;
     height: 85px;
     background: #222222;
+    color: white;
+}
+
+/* Classi generiche */
+
+.mBotton {
+    margin-bottom: 15px;
+}
+
+.mLeft {
+    margin-left: 2px;
 }
 
 /* Header */
@@ -45,6 +65,11 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 60px;
+}
+
+.bHead{
+    color: white;
+    background: #4A4A4A;
 }
 
 /* Main */
@@ -67,10 +92,62 @@ footer {
 } */
 
 .cardInfo {
+    display: flex;
     position: absolute;
     background: rgb(0 0 0 / 18%);
     height: 25px;
-    width: 100px;
+    width: 110px;
     color: white;
     bottom: 0;
+    align-items: center;
+}
+
+/* Footer */
+
+.containerFootL {
+    display: flex;
+    width: 15%;
+    padding-left: 10px;
+}
+
+.containerFootC {
+    display: flex;
+}
+
+/* .pulsantiFoot {
+    background-color: green;     
+} */
+
+.pulsantiFoot {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+}
+.pulsante {
+    text-align: center;
+    height: 100%;
+    width: 60px;
+}
+
+.bottone {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.testo {
+    width: 124px;
+    padding-right: 64px;
+}
+
+.closeCall {
+    text-align: center;
+    height: 100%;
+    width: 150px;
+    background: #4A4A4A;
+    color: red;
+    border: none;
 }
