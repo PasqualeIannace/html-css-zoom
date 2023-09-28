@@ -3,3 +3,74 @@
     padding: 0;
     margin: 0;
 }
+
+main {
+    margin-top: 40px;
+    height: calc(100vh - 125px);
+    overflow: auto;
+}
+
+header {
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 85px;
+    background: #222222;
+}
+
+/* Header */
+
+.opzioniHead {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    position: fixed;
+    background: black;
+    height: 40px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+
+/* Main */
+.paddingContainer {
+    width: calc(100% / 7);
+    padding: 8px;
+}
+
+.cardContainer {
+    height: 150px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+}
+
+/* .cardContainer > .cardInfo > p {
+    position: absolute;
+} */
+
+.cardInfo {
+    position: absolute;
+    background: rgb(0 0 0 / 18%);
+    height: 25px;
+    width: 100px;
+    color: white;
+    bottom: 0;
+}
